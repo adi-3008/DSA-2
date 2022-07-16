@@ -23,17 +23,14 @@ public class SubSetSum {
                 // if sum require is zero then and no of items are i then we will include none
                 // of the item and get sum zero.
                 T[i][0] = true;
-                S[i][0] = 1;
 
                 // if sum require is j and no of item are zero this is not possible.
                 T[0][j] = false;
-                S[0][j] = 0;
             }
         }
         T[0][0] = true;
         S[0][0] = 1;
 
-        int[][] temp = Arrays.copyOf(S, S.length);
 
         boolean flag = topDownSubSetSum(T, set);
         System.out.println(bottomUpSubSetSum(S,set,n,s));
