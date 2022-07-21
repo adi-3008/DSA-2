@@ -80,5 +80,6 @@ public class SubSetSum {
         int[] set = {2, 3, 6, 7, 4, 3, 2, 5};
         int w = 5;
         System.out.println(subSetSum(set, w));
+        System.out.println("Hello");
     }
 }

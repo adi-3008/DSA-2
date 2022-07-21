@@ -51,7 +51,7 @@ public class PascalTriangle {
     }
 
     public static void main(String[] args) {
-        int[][] ans = pascalTriangleTopDown(5);
+        int[][] ans = pascalTriangleBottomUp(5);
         printPascalTriangle(ans);
 
     }
